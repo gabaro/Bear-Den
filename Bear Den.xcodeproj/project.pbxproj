@@ -61,6 +61,9 @@
 		66AC409421ECC80900DADD9D /* Bear_DenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear_DenUITests.swift; sourceTree = "<group>"; };
 		66AC409621ECC80900DADD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66B5DA922201E2E0009B0B2A /* loginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginScreen.swift; sourceTree = "<group>"; };
+		66B649B92215A8A100499BB8 /* YelloBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YelloBox.png; sourceTree = "<group>"; };
+		66B649BA2215A8A300499BB8 /* Bear Loggin 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bear Loggin 2.jpg"; sourceTree = "<group>"; };
+		66B649BB2215A8A500499BB8 /* App Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "App Background.jpg"; sourceTree = "<group>"; };
 		66BFBD4D21F8A61A00B89A0F /* App Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "App Background.jpg"; path = "../../Downloads/App Background.jpg"; sourceTree = "<group>"; };
 		66EC66582214533000F7E645 /* timeLineTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeLineTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +119,9 @@
 		66AC407121ECC80800DADD9D /* Bear Den */ = {
 			isa = PBXGroup;
 			children = (
+				66B649BB2215A8A500499BB8 /* App Background.jpg */,
+				66B649BA2215A8A300499BB8 /* Bear Loggin 2.jpg */,
+				66B649B92215A8A100499BB8 /* YelloBox.png */,
 				66AC407221ECC80800DADD9D /* AppDelegate.swift */,
 				66B5DA922201E2E0009B0B2A /* loginScreen.swift */,
 				66AC407421ECC80800DADD9D /* FirstViewController.swift */,
