@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		669030A621EF6A7800A78EC4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669030A521EF6A7800A78EC4 /* ThirdViewController.swift */; };
+		669030A821EF6DD200A78EC4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669030A721EF6DD200A78EC4 /* FourthViewController.swift */; };
+		669558CE220B1695001AC9D3 /* YelloBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 669558CD220B1695001AC9D3 /* YelloBox.png */; };
+		66AC1FBE21FF3FFD0079C8FA /* Bear Loggin 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66AC1FBD21FF3FFD0079C8FA /* Bear Loggin 2.jpg */; };
 		66AC407321ECC80800DADD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407221ECC80800DADD9D /* AppDelegate.swift */; };
 		66AC407521ECC80800DADD9D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407421ECC80800DADD9D /* FirstViewController.swift */; };
 		66AC407721ECC80800DADD9D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407621ECC80800DADD9D /* SecondViewController.swift */; };
@@ -15,6 +19,9 @@
 		66AC407F21ECC80900DADD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AC407D21ECC80900DADD9D /* LaunchScreen.storyboard */; };
 		66AC408A21ECC80900DADD9D /* Bear_DenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC408921ECC80900DADD9D /* Bear_DenTests.swift */; };
 		66AC409521ECC80900DADD9D /* Bear_DenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC409421ECC80900DADD9D /* Bear_DenUITests.swift */; };
+		66B5DA932201E2E0009B0B2A /* loginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B5DA922201E2E0009B0B2A /* loginScreen.swift */; };
+		66BFBD4E21F8A61A00B89A0F /* App Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66BFBD4D21F8A61A00B89A0F /* App Background.jpg */; };
+		66EC66592214533000F7E645 /* timeLineTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC66582214533000F7E645 /* timeLineTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		669030A521EF6A7800A78EC4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		669030A721EF6DD200A78EC4 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		669558CD220B1695001AC9D3 /* YelloBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YelloBox.png; path = ../../Downloads/YelloBox.png; sourceTree = "<group>"; };
+		66AC1FBD21FF3FFD0079C8FA /* Bear Loggin 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Bear Loggin 2.jpg"; path = "../../Downloads/Bear Loggin 2.jpg"; sourceTree = "<group>"; };
 		66AC406F21ECC80800DADD9D /* Bear Den.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bear Den.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AC407221ECC80800DADD9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66AC407421ECC80800DADD9D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		66AC409021ECC80900DADD9D /* Bear DenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bear DenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AC409421ECC80900DADD9D /* Bear_DenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear_DenUITests.swift; sourceTree = "<group>"; };
 		66AC409621ECC80900DADD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66B5DA922201E2E0009B0B2A /* loginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginScreen.swift; sourceTree = "<group>"; };
+		66BFBD4D21F8A61A00B89A0F /* App Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "App Background.jpg"; path = "../../Downloads/App Background.jpg"; sourceTree = "<group>"; };
+		66EC66582214533000F7E645 /* timeLineTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeLineTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,9 @@
 		66AC406621ECC80800DADD9D = {
 			isa = PBXGroup;
 			children = (
+				669558CD220B1695001AC9D3 /* YelloBox.png */,
+				66AC1FBD21FF3FFD0079C8FA /* Bear Loggin 2.jpg */,
+				66BFBD4D21F8A61A00B89A0F /* App Background.jpg */,
 				66AC407121ECC80800DADD9D /* Bear Den */,
 				66AC408821ECC80900DADD9D /* Bear DenTests */,
 				66AC409321ECC80900DADD9D /* Bear DenUITests */,
@@ -100,8 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				66AC407221ECC80800DADD9D /* AppDelegate.swift */,
+				66B5DA922201E2E0009B0B2A /* loginScreen.swift */,
 				66AC407421ECC80800DADD9D /* FirstViewController.swift */,
+				66EC66582214533000F7E645 /* timeLineTable.swift */,
 				66AC407621ECC80800DADD9D /* SecondViewController.swift */,
+				669030A521EF6A7800A78EC4 /* ThirdViewController.swift */,
+				669030A721EF6DD200A78EC4 /* FourthViewController.swift */,
 				66AC407821ECC80800DADD9D /* Main.storyboard */,
 				66AC407B21ECC80900DADD9D /* Assets.xcassets */,
 				66AC407D21ECC80900DADD9D /* LaunchScreen.storyboard */,
@@ -232,9 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AC1FBE21FF3FFD0079C8FA /* Bear Loggin 2.jpg in Resources */,
 				66AC407F21ECC80900DADD9D /* LaunchScreen.storyboard in Resources */,
 				66AC407C21ECC80900DADD9D /* Assets.xcassets in Resources */,
+				66BFBD4E21F8A61A00B89A0F /* App Background.jpg in Resources */,
 				66AC407A21ECC80800DADD9D /* Main.storyboard in Resources */,
+				669558CE220B1695001AC9D3 /* YelloBox.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +285,11 @@
 			files = (
 				66AC407721ECC80800DADD9D /* SecondViewController.swift in Sources */,
 				66AC407321ECC80800DADD9D /* AppDelegate.swift in Sources */,
+				669030A621EF6A7800A78EC4 /* ThirdViewController.swift in Sources */,
+				66B5DA932201E2E0009B0B2A /* loginScreen.swift in Sources */,
+				66EC66592214533000F7E645 /* timeLineTable.swift in Sources */,
 				66AC407521ECC80800DADD9D /* FirstViewController.swift in Sources */,
+				669030A821EF6DD200A78EC4 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78PNVPRA9V;
 				INFOPLIST_FILE = "Bear Den/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabaro.Bear-Den";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78PNVPRA9V;
 				INFOPLIST_FILE = "Bear Den/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,7 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabaro.Bear-Den";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
