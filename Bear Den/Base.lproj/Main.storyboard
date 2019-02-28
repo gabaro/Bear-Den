@@ -65,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bear Loggin 2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e7F-TL-1t0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="App Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e7F-TL-1t0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -157,9 +157,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="App Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-D3-0N3">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8QH-aE-kpK" userLabel="Calendar View" customClass="JTAppleCalendarView">
-                                <rect key="frame" x="0.0" y="34" width="375" height="331"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8QH-aE-kpK" userLabel="CalendarView" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                <rect key="frame" x="0.0" y="20" width="375" height="331"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cd0-92-VGS">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -212,8 +212,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="dataSource" destination="F2H-D3-0N3" id="caW-4r-Nas"/>
-                                    <outlet property="delegate" destination="F2H-D3-0N3" id="YOS-8I-muD"/>
                                     <outlet property="ibCalendarDataSource" destination="U5p-ff-hja" id="Fhe-Db-7vA"/>
                                     <outlet property="ibCalendarDelegate" destination="U5p-ff-hja" id="lVI-Se-EMF"/>
                                 </connections>
@@ -225,14 +223,14 @@
                             <constraint firstItem="8QH-aE-kpK" firstAttribute="trailing" secondItem="F2H-D3-0N3" secondAttribute="trailing" id="4jw-3F-dKp"/>
                             <constraint firstItem="8QH-aE-kpK" firstAttribute="leading" secondItem="Rz9-Ik-Klc" secondAttribute="leading" id="ELs-zD-tid"/>
                             <constraint firstAttribute="trailing" secondItem="8QH-aE-kpK" secondAttribute="trailing" id="JcV-oc-Nbj"/>
-                            <constraint firstItem="8QH-aE-kpK" firstAttribute="top" secondItem="sPT-xA-Nyx" secondAttribute="top" constant="14" id="fQo-Dr-ee3"/>
-                            <constraint firstItem="sPT-xA-Nyx" firstAttribute="bottom" secondItem="8QH-aE-kpK" secondAttribute="bottom" constant="253" id="nsV-sA-QX2"/>
+                            <constraint firstItem="8QH-aE-kpK" firstAttribute="top" secondItem="sPT-xA-Nyx" secondAttribute="top" id="fQo-Dr-ee3"/>
+                            <constraint firstItem="sPT-xA-Nyx" firstAttribute="bottom" secondItem="8QH-aE-kpK" secondAttribute="bottom" constant="267" id="nsV-sA-QX2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sPT-xA-Nyx"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar" landscapeImage="calendar" largeContentSizeImage="calendar" id="TiJ-Xl-96s"/>
                     <connections>
-                        <outlet property="calendarView" destination="8QH-aE-kpK" id="heD-oo-v8x"/>
+                        <outlet property="calendarView" destination="8QH-aE-kpK" id="e9V-ca-cD3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4U-gK-qoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -242,7 +240,6 @@
     </scenes>
     <resources>
         <image name="App Background.jpg" width="750" height="1334"/>
-        <image name="Bear Loggin 2.jpg" width="750" height="1334"/>
         <image name="account" width="25" height="25"/>
         <image name="calendar" width="25" height="25"/>
         <image name="events" width="12" height="12"/>

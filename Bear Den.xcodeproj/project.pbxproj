@@ -21,7 +21,10 @@
 		869CFDFFE676A86D116A6ED8 /* Pods_Bear_DenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55ACA8FC0F8CBA865EFFD1A /* Pods_Bear_DenUITests.framework */; };
 		A63802E0AD1D1C4011756236 /* Pods_Bear_Den.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5A92875DB2C5CBB49ABB33 /* Pods_Bear_Den.framework */; };
 		EC1500E2221EDFD000CD768E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1500E1221EDFCF00CD768E /* CustomCell.swift */; };
+		EC4C21F32226C6DB00470E2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC4C21F22226C6DA00470E2B /* GoogleService-Info.plist */; };
 		ECAAE822221DE0AE0058F2F6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */; };
+		ECC2C93822285CCE003C147B /* CalendarSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */; };
+		ECC2C93922285CCE003C147B /* CalendarSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +73,10 @@
 		E6B7B7645246E522D7F9988E /* Pods-Bear DenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear DenUITests.release.xcconfig"; path = "Target Support Files/Pods-Bear DenUITests/Pods-Bear DenUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EC14EB3A2217ED6B0036551C /* Bear Den-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bear Den-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC1500E1221EDFCF00CD768E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		EC4C21F22226C6DA00470E2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSectionHeaderView.swift; sourceTree = "<group>"; };
+		ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarSectionHeaderView.xib; sourceTree = "<group>"; };
 		EEFE10C0F38EE2028FE93E6D /* Pods_Bear_DenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bear_DenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3397FED15973459D593A33 /* Pods-Bear Den.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear Den.debug.xcconfig"; path = "Target Support Files/Pods-Bear Den/Pods-Bear Den.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +112,9 @@
 		66AC406621ECC80800DADD9D = {
 			isa = PBXGroup;
 			children = (
+				66B649BB2215A8A500499BB8 /* App Background.jpg */,
+				66B649BA2215A8A300499BB8 /* Bear Loggin 2.jpg */,
+				66B649B92215A8A100499BB8 /* YelloBox.png */,
 				66AC407121ECC80800DADD9D /* Bear Den */,
 				66AC408821ECC80900DADD9D /* Bear DenTests */,
 				66AC409321ECC80900DADD9D /* Bear DenUITests */,
@@ -128,9 +137,7 @@
 		66AC407121ECC80800DADD9D /* Bear Den */ = {
 			isa = PBXGroup;
 			children = (
-				66B649BB2215A8A500499BB8 /* App Background.jpg */,
-				66B649BA2215A8A300499BB8 /* Bear Loggin 2.jpg */,
-				66B649B92215A8A100499BB8 /* YelloBox.png */,
+				ECC2C93522285CCE003C147B /* Header */,
 				66AC407221ECC80800DADD9D /* AppDelegate.swift */,
 				66B5DA922201E2E0009B0B2A /* loginScreen.swift */,
 				66AC407421ECC80800DADD9D /* FirstViewController.swift */,
@@ -143,6 +150,7 @@
 				EC1500E1221EDFCF00CD768E /* CustomCell.swift */,
 				66AC408021ECC80900DADD9D /* Info.plist */,
 				EC14EB3A2217ED6B0036551C /* Bear Den-Bridging-Header.h */,
+				EC4C21F22226C6DA00470E2B /* GoogleService-Info.plist */,
 			);
 			path = "Bear Den";
 			sourceTree = "<group>";
@@ -186,6 +194,15 @@
 				C55ACA8FC0F8CBA865EFFD1A /* Pods_Bear_DenUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECC2C93522285CCE003C147B /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */,
+				ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66AC407F21ECC80900DADD9D /* LaunchScreen.storyboard in Resources */,
+				EC4C21F32226C6DB00470E2B /* GoogleService-Info.plist in Resources */,
 				66AC407C21ECC80900DADD9D /* Assets.xcassets in Resources */,
 				66AC407A21ECC80800DADD9D /* Main.storyboard in Resources */,
+				ECC2C93922285CCE003C147B /* CalendarSectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,29 +348,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Bear Den/Pods-Bear Den-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Faye/Faye.framework",
-				"${BUILT_PRODUCTS_DIR}/GetStream/GetStream.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
-				"${BUILT_PRODUCTS_DIR}/Swime/Swime.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Faye.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GetStream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -436,6 +445,7 @@
 				ECAAE822221DE0AE0058F2F6 /* ThirdViewController.swift in Sources */,
 				66B5DA932201E2E0009B0B2A /* loginScreen.swift in Sources */,
 				66AC407521ECC80800DADD9D /* FirstViewController.swift in Sources */,
+				ECC2C93822285CCE003C147B /* CalendarSectionHeaderView.swift in Sources */,
 				EC1500E2221EDFD000CD768E /* CustomCell.swift in Sources */,
 				669030A821EF6DD200A78EC4 /* FourthViewController.swift in Sources */,
 			);

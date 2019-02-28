@@ -13,10 +13,9 @@ class ThirdViewController: UIViewController
 {
 
     @IBOutlet weak var calendarView: JTAppleCalendarView!
+    
     let formatter = DateFormatter()
     let numberOfRows = 6
-    
-    
     
     override func viewDidLoad()
     {
@@ -28,6 +27,7 @@ class ThirdViewController: UIViewController
     {
         calendarView.minimumLineSpacing = 0
         calendarView.minimumInteritemSpacing = 0
+        calendarView.register(UINib(nibName: "CalendarSectionHeaderView", bundle: Bundle.main),forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier:"CalendarSectionHeaderView")
         self.calendarView.scrollToDate(Date(),animateScroll: false)
         self.calendarView.selectDates([  Date() ])
     }
@@ -120,6 +120,14 @@ extension ThirdViewController: JTAppleCalendarViewDelegate{
         configureCell(cell: cell, cellState: cellState)
     }
     
+    func calendar(_ calendar: JTAppleCalendarView, headerViewForDateRange range: (start: Date, end: Date), at indexPath: IndexPath) -> JTAppleCollectionReusableView {
+        let header = calendar.dequeueReusableJTAppleSupplementaryView(withReuseIdentifier: "CalendarSectionHeaderView", for: indexPath)
+        let date = range.start
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM YYYY"
+        (header as! CalendarSectionHeaderView).title.text = formatter.string(from: date)
+        return header
+    }
     func calendarSizeForMonths(_ calendar: JTAppleCalendarView?) -> MonthSize? {
         return MonthSize(defaultSize: 40)
     }
