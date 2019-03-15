@@ -11,17 +11,18 @@
 		669030A821EF6DD200A78EC4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669030A721EF6DD200A78EC4 /* FourthViewController.swift */; };
 		66AC407321ECC80800DADD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407221ECC80800DADD9D /* AppDelegate.swift */; };
 		66AC407521ECC80800DADD9D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407421ECC80800DADD9D /* FirstViewController.swift */; };
-		66AC407721ECC80800DADD9D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407621ECC80800DADD9D /* SecondViewController.swift */; };
 		66AC407A21ECC80800DADD9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AC407821ECC80800DADD9D /* Main.storyboard */; };
 		66AC407C21ECC80900DADD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66AC407B21ECC80900DADD9D /* Assets.xcassets */; };
-		66AC407F21ECC80900DADD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AC407D21ECC80900DADD9D /* LaunchScreen.storyboard */; };
 		66AC408A21ECC80900DADD9D /* Bear_DenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC408921ECC80900DADD9D /* Bear_DenTests.swift */; };
 		66AC409521ECC80900DADD9D /* Bear_DenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC409421ECC80900DADD9D /* Bear_DenUITests.swift */; };
 		66B5DA932201E2E0009B0B2A /* loginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B5DA922201E2E0009B0B2A /* loginScreen.swift */; };
 		869CFDFFE676A86D116A6ED8 /* Pods_Bear_DenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55ACA8FC0F8CBA865EFFD1A /* Pods_Bear_DenUITests.framework */; };
 		A63802E0AD1D1C4011756236 /* Pods_Bear_Den.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5A92875DB2C5CBB49ABB33 /* Pods_Bear_Den.framework */; };
 		EC1500E2221EDFD000CD768E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1500E1221EDFCF00CD768E /* CustomCell.swift */; };
-		EC4C21F32226C6DB00470E2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC4C21F22226C6DA00470E2B /* GoogleService-Info.plist */; };
+		EC96E880222EB0570026FE5D /* signUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E87F222EB0570026FE5D /* signUpScreen.swift */; };
+		EC96E882222EB09A0026FE5D /* firstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E881222EB09A0026FE5D /* firstPage.swift */; };
+		EC9DAC58223C004200DBD2F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9DAC57223C004200DBD2F4 /* GoogleService-Info.plist */; };
+		ECA14716223158FB000C8EBF /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */; };
 		ECAAE822221DE0AE0058F2F6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */; };
 		ECC2C93822285CCE003C147B /* CalendarSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */; };
 		ECC2C93922285CCE003C147B /* CalendarSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */; };
@@ -50,10 +51,8 @@
 		66AC406F21ECC80800DADD9D /* Bear Den.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bear Den.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AC407221ECC80800DADD9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66AC407421ECC80800DADD9D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		66AC407621ECC80800DADD9D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		66AC407921ECC80800DADD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66AC407B21ECC80900DADD9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		66AC407E21ECC80900DADD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66AC408021ECC80900DADD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66AC408521ECC80900DADD9D /* Bear DenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bear DenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AC408921ECC80900DADD9D /* Bear_DenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear_DenTests.swift; sourceTree = "<group>"; };
@@ -62,9 +61,6 @@
 		66AC409421ECC80900DADD9D /* Bear_DenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear_DenUITests.swift; sourceTree = "<group>"; };
 		66AC409621ECC80900DADD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66B5DA922201E2E0009B0B2A /* loginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginScreen.swift; sourceTree = "<group>"; };
-		66B649B92215A8A100499BB8 /* YelloBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YelloBox.png; sourceTree = "<group>"; };
-		66B649BA2215A8A300499BB8 /* Bear Loggin 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bear Loggin 2.jpg"; sourceTree = "<group>"; };
-		66B649BB2215A8A500499BB8 /* App Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "App Background.jpg"; sourceTree = "<group>"; };
 		73CAEC28CA21C957333F905F /* Pods-Bear DenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear DenTests.debug.xcconfig"; path = "Target Support Files/Pods-Bear DenTests/Pods-Bear DenTests.debug.xcconfig"; sourceTree = "<group>"; };
 		89EC684D4C01DFBAD4CAE8C4 /* Pods-Bear DenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear DenTests.release.xcconfig"; path = "Target Support Files/Pods-Bear DenTests/Pods-Bear DenTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A03D3A2E723570D172068A0 /* Pods-Bear DenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear DenUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bear DenUITests/Pods-Bear DenUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,7 +69,10 @@
 		E6B7B7645246E522D7F9988E /* Pods-Bear DenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear DenUITests.release.xcconfig"; path = "Target Support Files/Pods-Bear DenUITests/Pods-Bear DenUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EC14EB3A2217ED6B0036551C /* Bear Den-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bear Den-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC1500E1221EDFCF00CD768E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		EC4C21F22226C6DA00470E2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC96E87F222EB0570026FE5D /* signUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpScreen.swift; sourceTree = "<group>"; };
+		EC96E881222EB09A0026FE5D /* firstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstPage.swift; sourceTree = "<group>"; };
+		EC9DAC57223C004200DBD2F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSectionHeaderView.swift; sourceTree = "<group>"; };
 		ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarSectionHeaderView.xib; sourceTree = "<group>"; };
@@ -112,9 +111,6 @@
 		66AC406621ECC80800DADD9D = {
 			isa = PBXGroup;
 			children = (
-				66B649BB2215A8A500499BB8 /* App Background.jpg */,
-				66B649BA2215A8A300499BB8 /* Bear Loggin 2.jpg */,
-				66B649B92215A8A100499BB8 /* YelloBox.png */,
 				66AC407121ECC80800DADD9D /* Bear Den */,
 				66AC408821ECC80900DADD9D /* Bear DenTests */,
 				66AC409321ECC80900DADD9D /* Bear DenUITests */,
@@ -139,18 +135,19 @@
 			children = (
 				ECC2C93522285CCE003C147B /* Header */,
 				66AC407221ECC80800DADD9D /* AppDelegate.swift */,
+				EC96E881222EB09A0026FE5D /* firstPage.swift */,
 				66B5DA922201E2E0009B0B2A /* loginScreen.swift */,
+				EC96E87F222EB0570026FE5D /* signUpScreen.swift */,
 				66AC407421ECC80800DADD9D /* FirstViewController.swift */,
-				66AC407621ECC80800DADD9D /* SecondViewController.swift */,
 				ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */,
 				669030A721EF6DD200A78EC4 /* FourthViewController.swift */,
+				ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */,
 				66AC407821ECC80800DADD9D /* Main.storyboard */,
 				66AC407B21ECC80900DADD9D /* Assets.xcassets */,
-				66AC407D21ECC80900DADD9D /* LaunchScreen.storyboard */,
 				EC1500E1221EDFCF00CD768E /* CustomCell.swift */,
 				66AC408021ECC80900DADD9D /* Info.plist */,
 				EC14EB3A2217ED6B0036551C /* Bear Den-Bridging-Header.h */,
-				EC4C21F22226C6DA00470E2B /* GoogleService-Info.plist */,
+				EC9DAC57223C004200DBD2F4 /* GoogleService-Info.plist */,
 			);
 			path = "Bear Den";
 			sourceTree = "<group>";
@@ -217,6 +214,7 @@
 				66AC406C21ECC80800DADD9D /* Frameworks */,
 				66AC406D21ECC80800DADD9D /* Resources */,
 				30924FD851F0AAAFECB6B712 /* [CP] Embed Pods Frameworks */,
+				590293CD34244A8414FCDDF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,9 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66AC407F21ECC80900DADD9D /* LaunchScreen.storyboard in Resources */,
-				EC4C21F32226C6DB00470E2B /* GoogleService-Info.plist in Resources */,
 				66AC407C21ECC80900DADD9D /* Assets.xcassets in Resources */,
+				EC9DAC58223C004200DBD2F4 /* GoogleService-Info.plist in Resources */,
 				66AC407A21ECC80800DADD9D /* Main.storyboard in Resources */,
 				ECC2C93922285CCE003C147B /* CalendarSectionHeaderView.xib in Resources */,
 			);
@@ -348,23 +345,87 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Bear Den/Pods-Bear Den-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bear Den/Pods-Bear Den-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		590293CD34244A8414FCDDF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bear Den/Pods-Bear Den-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bear Den/Pods-Bear Den-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7DA82AF1EDB26D0CBF3CC26D /* [CP] Check Pods Manifest.lock */ = {
@@ -440,14 +501,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66AC407721ECC80800DADD9D /* SecondViewController.swift in Sources */,
 				66AC407321ECC80800DADD9D /* AppDelegate.swift in Sources */,
+				ECA14716223158FB000C8EBF /* RoundedWhiteButton.swift in Sources */,
 				ECAAE822221DE0AE0058F2F6 /* ThirdViewController.swift in Sources */,
 				66B5DA932201E2E0009B0B2A /* loginScreen.swift in Sources */,
+				EC96E880222EB0570026FE5D /* signUpScreen.swift in Sources */,
 				66AC407521ECC80800DADD9D /* FirstViewController.swift in Sources */,
 				ECC2C93822285CCE003C147B /* CalendarSectionHeaderView.swift in Sources */,
 				EC1500E2221EDFD000CD768E /* CustomCell.swift in Sources */,
 				669030A821EF6DD200A78EC4 /* FourthViewController.swift in Sources */,
+				EC96E882222EB09A0026FE5D /* firstPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,14 +552,6 @@
 				66AC407921ECC80800DADD9D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		66AC407D21ECC80900DADD9D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66AC407E21ECC80900DADD9D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
