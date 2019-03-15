@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class firstPage: UIViewController
 {
@@ -30,6 +31,10 @@ class firstPage: UIViewController
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        if let user = Auth.auth().currentUser {
+            self.performSegue(withIdentifier: "toFirstPage", sender: self)
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

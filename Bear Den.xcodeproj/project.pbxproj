@@ -22,6 +22,7 @@
 		EC96E880222EB0570026FE5D /* signUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E87F222EB0570026FE5D /* signUpScreen.swift */; };
 		EC96E882222EB09A0026FE5D /* firstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E881222EB09A0026FE5D /* firstPage.swift */; };
 		EC9DAC58223C004200DBD2F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9DAC57223C004200DBD2F4 /* GoogleService-Info.plist */; };
+		EC9DAC5C223C279700DBD2F4 /* LastTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9DAC5B223C279700DBD2F4 /* LastTab.swift */; };
 		ECA14716223158FB000C8EBF /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */; };
 		ECAAE822221DE0AE0058F2F6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */; };
 		ECC2C93822285CCE003C147B /* CalendarSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */; };
@@ -72,6 +73,7 @@
 		EC96E87F222EB0570026FE5D /* signUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpScreen.swift; sourceTree = "<group>"; };
 		EC96E881222EB09A0026FE5D /* firstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstPage.swift; sourceTree = "<group>"; };
 		EC9DAC57223C004200DBD2F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC9DAC5B223C279700DBD2F4 /* LastTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTab.swift; sourceTree = "<group>"; };
 		ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSectionHeaderView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				66AC407421ECC80800DADD9D /* FirstViewController.swift */,
 				ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */,
 				669030A721EF6DD200A78EC4 /* FourthViewController.swift */,
+				EC9DAC5B223C279700DBD2F4 /* LastTab.swift */,
 				ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */,
 				66AC407821ECC80800DADD9D /* Main.storyboard */,
 				66AC407B21ECC80900DADD9D /* Assets.xcassets */,
@@ -503,6 +506,7 @@
 			files = (
 				66AC407321ECC80800DADD9D /* AppDelegate.swift in Sources */,
 				ECA14716223158FB000C8EBF /* RoundedWhiteButton.swift in Sources */,
+				EC9DAC5C223C279700DBD2F4 /* LastTab.swift in Sources */,
 				ECAAE822221DE0AE0058F2F6 /* ThirdViewController.swift in Sources */,
 				66B5DA932201E2E0009B0B2A /* loginScreen.swift in Sources */,
 				EC96E880222EB0570026FE5D /* signUpScreen.swift in Sources */,

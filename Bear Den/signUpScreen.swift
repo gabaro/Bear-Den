@@ -96,6 +96,15 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
         Auth.auth().createUser(withEmail: email, password: password){user, error in
             if error == nil && error != nil{
                 print("User Created!")
+                
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.displayName = username
+                changeRequest?.commitChanges { error in
+                    if error == nil {
+                        print("User display name changed!")
+                        self.dismiss(animated: false, completion: nil)
+                    }
+                }
             }else{
                 print("Error creating user: \(String(describing: error?.localizedDescription))")
             }
@@ -120,5 +129,5 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
         continueButton.center = CGPoint(x: view.center.x,
                                         y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
         activityView.center = continueButton.center
-}
+    }
 }
