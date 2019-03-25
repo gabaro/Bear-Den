@@ -10,7 +10,7 @@
 		4720D3549352E8CB2B969529 /* Pods_Bear_DenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFE10C0F38EE2028FE93E6D /* Pods_Bear_DenTests.framework */; };
 		669030A821EF6DD200A78EC4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669030A721EF6DD200A78EC4 /* FourthViewController.swift */; };
 		66AC407321ECC80800DADD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407221ECC80800DADD9D /* AppDelegate.swift */; };
-		66AC407521ECC80800DADD9D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407421ECC80800DADD9D /* FirstViewController.swift */; };
+		66AC407521ECC80800DADD9D /* timeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC407421ECC80800DADD9D /* timeLine.swift */; };
 		66AC407A21ECC80800DADD9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AC407821ECC80800DADD9D /* Main.storyboard */; };
 		66AC407C21ECC80900DADD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66AC407B21ECC80900DADD9D /* Assets.xcassets */; };
 		66AC408A21ECC80900DADD9D /* Bear_DenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AC408921ECC80900DADD9D /* Bear_DenTests.swift */; };
@@ -22,9 +22,14 @@
 		EC96E880222EB0570026FE5D /* signUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E87F222EB0570026FE5D /* signUpScreen.swift */; };
 		EC96E882222EB09A0026FE5D /* firstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96E881222EB09A0026FE5D /* firstPage.swift */; };
 		EC9DAC58223C004200DBD2F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9DAC57223C004200DBD2F4 /* GoogleService-Info.plist */; };
-		EC9DAC5C223C279700DBD2F4 /* LastTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9DAC5B223C279700DBD2F4 /* LastTab.swift */; };
 		ECA14716223158FB000C8EBF /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */; };
 		ECAAE822221DE0AE0058F2F6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */; };
+		ECAD3484224835F500478115 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD3482224835F500478115 /* PostTableViewCell.swift */; };
+		ECAD3485224835F500478115 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECAD3483224835F500478115 /* PostTableViewCell.xib */; };
+		ECAD348B224844FA00478115 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD348A224844FA00478115 /* Post.swift */; };
+		ECAD348D2248893C00478115 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD348C2248893C00478115 /* NewPostViewController.swift */; };
+		ECAD348F2248947A00478115 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD348E2248947A00478115 /* UserProfile.swift */; };
+		ECAD34912248950700478115 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD34902248950700478115 /* UserService.swift */; };
 		ECC2C93822285CCE003C147B /* CalendarSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */; };
 		ECC2C93922285CCE003C147B /* CalendarSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */; };
 /* End PBXBuildFile section */
@@ -51,7 +56,7 @@
 		669030A721EF6DD200A78EC4 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		66AC406F21ECC80800DADD9D /* Bear Den.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bear Den.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AC407221ECC80800DADD9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66AC407421ECC80800DADD9D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		66AC407421ECC80800DADD9D /* timeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeLine.swift; sourceTree = "<group>"; };
 		66AC407921ECC80800DADD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66AC407B21ECC80900DADD9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66AC408021ECC80900DADD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,9 +78,14 @@
 		EC96E87F222EB0570026FE5D /* signUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpScreen.swift; sourceTree = "<group>"; };
 		EC96E881222EB09A0026FE5D /* firstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstPage.swift; sourceTree = "<group>"; };
 		EC9DAC57223C004200DBD2F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EC9DAC5B223C279700DBD2F4 /* LastTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTab.swift; sourceTree = "<group>"; };
 		ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		ECAD3482224835F500478115 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		ECAD3483224835F500478115 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		ECAD348A224844FA00478115 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ECAD348C2248893C00478115 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		ECAD348E2248947A00478115 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		ECAD34902248950700478115 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSectionHeaderView.swift; sourceTree = "<group>"; };
 		ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarSectionHeaderView.xib; sourceTree = "<group>"; };
 		EEFE10C0F38EE2028FE93E6D /* Pods_Bear_DenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bear_DenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,19 +145,13 @@
 		66AC407121ECC80800DADD9D /* Bear Den */ = {
 			isa = PBXGroup;
 			children = (
-				ECC2C93522285CCE003C147B /* Header */,
 				66AC407221ECC80800DADD9D /* AppDelegate.swift */,
-				EC96E881222EB09A0026FE5D /* firstPage.swift */,
-				66B5DA922201E2E0009B0B2A /* loginScreen.swift */,
-				EC96E87F222EB0570026FE5D /* signUpScreen.swift */,
-				66AC407421ECC80800DADD9D /* FirstViewController.swift */,
-				ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */,
-				669030A721EF6DD200A78EC4 /* FourthViewController.swift */,
-				EC9DAC5B223C279700DBD2F4 /* LastTab.swift */,
-				ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */,
-				66AC407821ECC80800DADD9D /* Main.storyboard */,
+				ECAD348722483AE800478115 /* Tabs */,
+				ECAD348622483AB800478115 /* Pages */,
+				ECAD348822483B2C00478115 /* Custom Cells */,
+				ECAD3489224844BD00478115 /* Models */,
 				66AC407B21ECC80900DADD9D /* Assets.xcassets */,
-				EC1500E1221EDFCF00CD768E /* CustomCell.swift */,
+				66AC407821ECC80800DADD9D /* Main.storyboard */,
 				66AC408021ECC80900DADD9D /* Info.plist */,
 				EC14EB3A2217ED6B0036551C /* Bear Den-Bridging-Header.h */,
 				EC9DAC57223C004200DBD2F4 /* GoogleService-Info.plist */,
@@ -196,13 +200,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ECC2C93522285CCE003C147B /* Header */ = {
+		ECAD348622483AB800478115 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				EC96E881222EB09A0026FE5D /* firstPage.swift */,
+				66B5DA922201E2E0009B0B2A /* loginScreen.swift */,
+				EC96E87F222EB0570026FE5D /* signUpScreen.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		ECAD348722483AE800478115 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				66AC407421ECC80800DADD9D /* timeLine.swift */,
+				669030A721EF6DD200A78EC4 /* FourthViewController.swift */,
+				ECAAE821221DE0AE0058F2F6 /* ThirdViewController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		ECAD348822483B2C00478115 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
 				ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */,
 				ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */,
+				ECAD3482224835F500478115 /* PostTableViewCell.swift */,
+				ECAD3483224835F500478115 /* PostTableViewCell.xib */,
+				EC1500E1221EDFCF00CD768E /* CustomCell.swift */,
+				ECA14715223158FB000C8EBF /* RoundedWhiteButton.swift */,
+				ECAD348C2248893C00478115 /* NewPostViewController.swift */,
 			);
-			path = Header;
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		ECAD3489224844BD00478115 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD348A224844FA00478115 /* Post.swift */,
+				ECAD348E2248947A00478115 /* UserProfile.swift */,
+				ECAD34902248950700478115 /* UserService.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66AC407C21ECC80900DADD9D /* Assets.xcassets in Resources */,
+				ECAD3485224835F500478115 /* PostTableViewCell.xib in Resources */,
 				EC9DAC58223C004200DBD2F4 /* GoogleService-Info.plist in Resources */,
 				66AC407A21ECC80800DADD9D /* Main.storyboard in Resources */,
 				ECC2C93922285CCE003C147B /* CalendarSectionHeaderView.xib in Resources */,
@@ -504,14 +544,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECAD3484224835F500478115 /* PostTableViewCell.swift in Sources */,
+				ECAD348D2248893C00478115 /* NewPostViewController.swift in Sources */,
+				ECAD348F2248947A00478115 /* UserProfile.swift in Sources */,
 				66AC407321ECC80800DADD9D /* AppDelegate.swift in Sources */,
 				ECA14716223158FB000C8EBF /* RoundedWhiteButton.swift in Sources */,
-				EC9DAC5C223C279700DBD2F4 /* LastTab.swift in Sources */,
+				ECAD348B224844FA00478115 /* Post.swift in Sources */,
 				ECAAE822221DE0AE0058F2F6 /* ThirdViewController.swift in Sources */,
 				66B5DA932201E2E0009B0B2A /* loginScreen.swift in Sources */,
 				EC96E880222EB0570026FE5D /* signUpScreen.swift in Sources */,
-				66AC407521ECC80800DADD9D /* FirstViewController.swift in Sources */,
+				66AC407521ECC80800DADD9D /* timeLine.swift in Sources */,
 				ECC2C93822285CCE003C147B /* CalendarSectionHeaderView.swift in Sources */,
+				ECAD34912248950700478115 /* UserService.swift in Sources */,
 				EC1500E2221EDFD000CD768E /* CustomCell.swift in Sources */,
 				669030A821EF6DD200A78EC4 /* FourthViewController.swift in Sources */,
 				EC96E882222EB09A0026FE5D /* firstPage.swift in Sources */,

@@ -17,6 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
+        let authListener = Auth.auth().addStateDidChangeListener{ auth, user in
+           
+             let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            if user != nil{
+                
+                UserService.observeUserProfile(user!.uid) {  userProfile in
+                    UserService.currentUserProfile = userProfile
+                }
+                let controller = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+            }else{
+                UserService.currentUserProfile = nil
+                let controller = storyboard.instantiateViewController(withIdentifier: "firstPage") as! firstPage
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+            }
+        }
+        
         return true
     }
 

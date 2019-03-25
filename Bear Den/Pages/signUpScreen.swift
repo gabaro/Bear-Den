@@ -26,7 +26,7 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
         
         continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         continueButton.setTitleColor(UIColor.black, for: .normal)
-        continueButton.setTitle("Continue", for: .normal)
+        continueButton.setTitle("Sign-Up", for: .normal)
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.bold)
         continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
@@ -102,13 +102,25 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
                 changeRequest?.commitChanges { error in
                     if error == nil {
                         print("User display name changed!")
+                        }
                         self.dismiss(animated: false, completion: nil)
-                    }
                 }
             }else{
-                print("Error creating user: \(String(describing: error?.localizedDescription))")
+                self.ResetFields()
+            }
+            
             }
         }
+    
+    func ResetFields() {
+        let alert = UIAlertController(title: "Error signing up.", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        setContinueButton(enabled: true)
+        continueButton.setTitle("Sign-up", for: .normal)
+        activityView.stopAnimating()
+        
     }
     
     //checks to see if all text fields have something in them
@@ -130,4 +142,5 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
                                         y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
         activityView.center = continueButton.center
     }
+
 }

@@ -1,15 +1,16 @@
 //
-//  LastTab.swift
+//  FourthViewController.swift
 //  Bear Den
 //
-//  Created by Genevieve Garrison on 3/15/19.
+//  Created by 2019 Brandon Garrison on 1/16/19.
 //  Copyright © 2019 Gabaro 2019. All rights reserved.
 //
-import Foundation
+
 import UIKit
+import Foundation
 import Firebase
 
-class LastTab: UIViewController {
+class FourthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,6 @@ class LastTab: UIViewController {
     
     @IBAction func handleLogout(_ target: UIButton){
         try! Auth.auth().signOut()
-        self.dismiss(animated: false, completion: nil)
     }
 
 }
