@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 import Firebase
-import FirebaseUI
 
 class signUpScreen: UIViewController, UITextFieldDelegate {
 
@@ -16,9 +15,13 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailField2: UITextField!
     @IBOutlet weak var passwordField2: UITextField!
     @IBOutlet weak var dismissButton: UIButton!
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var tapToChangeProfileButton: UIButton!
     
     var continueButton:RoundedWhiteButton!
     var activityView:UIActivityIndicatorView!
+    
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad()
     {
@@ -49,6 +52,23 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
         usernameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         emailField2.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordField2.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
+        profileImageView.isUserInteractionEnabled = true
+        profileImageView.addGestureRecognizer(imageTap)
+        profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
+        profileImageView.clipsToBounds = true
+        tapToChangeProfileButton.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        
+    }
+    
+    @objc func openImagePicker(_ sender:Any){
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     
@@ -88,29 +108,92 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
         guard let username = usernameField.text else {return}
         guard let password = passwordField2.text else {return}
         guard let email = emailField2.text else {return}
+        guard let image = profileImageView.image else { return }
         
         setContinueButton(enabled: false)
         continueButton.setTitle("", for: .normal)
         activityView.startAnimating()
+        print("Im the dawn")
         
         Auth.auth().createUser(withEmail: email, password: password){user, error in
-            if error == nil && error != nil{
+            if error == nil{
                 print("User Created!")
                 
-                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-                changeRequest?.displayName = username
-                changeRequest?.commitChanges { error in
-                    if error == nil {
-                        print("User display name changed!")
+                self.uploadProfileImage(image) { url in
+                    
+                    if url != nil {
+                        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                        changeRequest?.displayName = username
+                        changeRequest?.photoURL = url
+                        print("Error0:")
+                        
+                        changeRequest?.commitChanges { error in
+                            if error == nil {
+                                print("User display name changed!")
+                                
+                                self.saveProfile(username: username, profileImageURL: url!) { success in
+                                    if success {
+                                        self.dismiss(animated: true, completion: nil)
+                                    } else {
+                                        print("Error1:")
+                                        self.ResetFields()
+                                    }
+                                }
+                                
+                            } else {
+                                print("Error2")
+                                self.ResetFields()
+                            }
                         }
-                        self.dismiss(animated: false, completion: nil)
+                    } else {
+                        print("Error3:")
+                        self.ResetFields()
+                    }
+                    
                 }
-            }else{
+                
+            } else {
+                print("Error4")
                 self.ResetFields()
             }
-            
+        }
+    }
+    
+    func saveProfile(username:String, profileImageURL:URL, completion: @escaping ((_ success:Bool)->())) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+        
+        let userObject = [
+            "username": username,
+            "photoURL": profileImageURL.absoluteString
+            ] as [String:Any]
+        
+        databaseRef.setValue(userObject) { error, ref in
+            completion(error == nil)
+        }
+    }
+    
+    func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url:URL?)->())) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let storageRef = Storage.storage().reference().child("user/\(uid)")
+        guard let imageData = image.jpegData(compressionQuality:0.75) else { return }
+        
+        print("Error5:")
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpg"
+        
+        storageRef.putData(imageData, metadata: metaData) { metaData, error in
+            if error == nil, metaData != nil {
+                
+                storageRef.downloadURL { url, error in
+                    completion(url)
+                }
+            } else {
+                // failed
+                completion(nil)
             }
         }
+    }
     
     func ResetFields() {
         let alert = UIAlertController(title: "Error signing up.", message: nil, preferredStyle: .alert)
@@ -142,5 +225,22 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
                                         y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
         activityView.center = continueButton.center
     }
-
 }
+
+extension signUpScreen: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info:[UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            self.profileImageView.image = pickedImage
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+}
+

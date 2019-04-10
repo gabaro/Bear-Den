@@ -30,6 +30,7 @@
 		ECAD348D2248893C00478115 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD348C2248893C00478115 /* NewPostViewController.swift */; };
 		ECAD348F2248947A00478115 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD348E2248947A00478115 /* UserProfile.swift */; };
 		ECAD34912248950700478115 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD34902248950700478115 /* UserService.swift */; };
+		ECBC89DD2256345500D557E1 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC89DC2256345500D557E1 /* ImageService.swift */; };
 		ECC2C93822285CCE003C147B /* CalendarSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */; };
 		ECC2C93922285CCE003C147B /* CalendarSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		ECAD348C2248893C00478115 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		ECAD348E2248947A00478115 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		ECAD34902248950700478115 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		ECBC89DC2256345500D557E1 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		ECC2C93622285CCE003C147B /* CalendarSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSectionHeaderView.swift; sourceTree = "<group>"; };
 		ECC2C93722285CCE003C147B /* CalendarSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarSectionHeaderView.xib; sourceTree = "<group>"; };
 		EEFE10C0F38EE2028FE93E6D /* Pods_Bear_DenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bear_DenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +242,7 @@
 				ECAD348A224844FA00478115 /* Post.swift */,
 				ECAD348E2248947A00478115 /* UserProfile.swift */,
 				ECAD34902248950700478115 /* UserService.swift */,
+				ECBC89DC2256345500D557E1 /* ImageService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAD3484224835F500478115 /* PostTableViewCell.swift in Sources */,
+				ECBC89DD2256345500D557E1 /* ImageService.swift in Sources */,
 				ECAD348D2248893C00478115 /* NewPostViewController.swift in Sources */,
 				ECAD348F2248947A00478115 /* UserProfile.swift in Sources */,
 				66AC407321ECC80800DADD9D /* AppDelegate.swift in Sources */,

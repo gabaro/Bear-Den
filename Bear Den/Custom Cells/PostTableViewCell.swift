@@ -24,13 +24,17 @@ class PostTableViewCell: UITableViewCell {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+       // super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
     
     func set(post:Post){
-        usernameLabel.text = post.author
+        ImageService.getImage(withURL: post.author.photoURL){ image in
+            self.profileImageView.image = image
+        }
+        
+        usernameLabel.text = post.author.username
         postTextLabel.text = post.text
     }
     

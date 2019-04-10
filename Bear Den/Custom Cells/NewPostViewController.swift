@@ -29,17 +29,18 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
         let postObject = [
             "author": [
                 "uid": userProfile.uid,
-                "username": userProfile.username],
+                "username": userProfile.username,
+                "photoURL": userProfile.photoURL.absoluteString
+            ],
             "text": textView.text,
-            "timestap":[".sv":"timestamp"]
-        ] as [String:Any]
+            "timestamp": [".sv":"timestamp"]
+            ] as [String:Any]
         
         postRef.setValue(postObject, withCompletionBlock: { error, ref in
             if error == nil {
                 self.dismiss(animated: true, completion: nil)
             } else {
-               self.errorPosting()
-                print("\(String(describing: error))")
+                // Handle the error
             }
         })
     }
@@ -59,9 +60,9 @@ class NewPostViewController:UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cancelButton.tintColor = UIColor.green
+        cancelButton.tintColor = #colorLiteral(red: 0.06752180866, green: 0.6622409326, blue: 0.1975145533, alpha: 1)
         
-        doneButton.backgroundColor = UIColor.green
+        doneButton.backgroundColor = #colorLiteral(red: 0.06752180866, green: 0.6622409326, blue: 0.1975145533, alpha: 1)
         doneButton.layer.cornerRadius = doneButton.bounds.height / 2
         doneButton.clipsToBounds = true
         
