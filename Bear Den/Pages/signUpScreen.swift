@@ -33,7 +33,7 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.bold)
         continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
-        continueButton.defaultColor = UIColor.white
+        continueButton.defaultColor = #colorLiteral(red: 0.9321854711, green: 0.7782275081, blue: 0.2695138752, alpha: 1)
         continueButton.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
         view.addSubview(continueButton)
         setContinueButton(enabled: false)
