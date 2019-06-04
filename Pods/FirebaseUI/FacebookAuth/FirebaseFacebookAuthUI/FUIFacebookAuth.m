@@ -136,7 +136,7 @@ static NSString *const kFacebookDisplayName = @"FacebookDisplayName";
   _pendingSignInCallback = completion;
   _presentingViewController = presentingViewController;
 
-  [_loginManager logInWithReadPermissions:_scopes
+   /* [_loginManager logInWithReadPermissions:_scopes
                        fromViewController:presentingViewController
                                   handler:^(FBSDKLoginManagerLoginResult *result,
                                             NSError *error) {
@@ -158,7 +158,7 @@ static NSString *const kFacebookDisplayName = @"FacebookDisplayName";
       [self completeSignInFlowWithAccessToken:result.token.tokenString
                                         error:nil];
     }
-  }];
+  }];*/
 }
 
 - (NSString *)email {

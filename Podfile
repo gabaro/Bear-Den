@@ -17,8 +17,6 @@ target 'Bear Den' do
     # Pods for testing
   end
 
- pod 'SwiftDate', '~> 5.1'
- pod 'JTAppleCalendar', '~> 7.1'
  pod 'Firebase/Core'
  pod 'Firebase/Auth'
  pod 'FirebaseUI'

@@ -221,7 +221,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="22"/>
@@ -247,7 +247,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="22"/>
@@ -263,7 +263,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="22"/>
@@ -371,7 +371,7 @@
                                 <color key="textColor" red="0.93218547110000005" green="0.77822750809999997" blue="0.26951387519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5J-c6-frl">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5J-c6-frl">
                                 <rect key="frame" x="22" y="161" width="331" height="43"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -379,7 +379,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="22"/>
@@ -403,7 +403,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="22"/>
@@ -474,35 +474,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundG" translatesAutoresizingMaskIntoConstraints="NO" id="iaA-nv-klU">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundG" translatesAutoresizingMaskIntoConstraints="NO" id="iaA-nv-klU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzr-Ha-w8L">
-                                <rect key="frame" x="88" y="265" width="169" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.067521808660000002" green="0.66224093260000005" blue="0.19751455330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="logout"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nr-c7-n3J">
+                                <rect key="frame" x="71" y="513" width="233" height="70"/>
+                                <color key="backgroundColor" red="0.93218547110000005" green="0.77822750809999997" blue="0.26951387519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Nr-c7-n3J" secondAttribute="height" multiplier="250:75" id="aoN-Fa-Nv6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" red="0.048232345429999997" green="0.50463487689999997" blue="0.14939126920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="handleLogout:" destination="eDq-iT-VeV" eventType="touchUpInside" id="s8q-Ym-mL3"/>
+                                    <action selector="handleLogout:" destination="eDq-iT-VeV" eventType="touchUpInside" id="jJP-pJ-2pR"/>
                                 </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profImage" translatesAutoresizingMaskIntoConstraints="NO" id="qTc-jO-4EE">
+                                <rect key="frame" x="97" y="69" width="181" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qTc-jO-4EE" secondAttribute="height" multiplier="1:1" id="RJE-5Z-3Ky"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzZ-gV-Pds">
+                                <rect key="frame" x="137" y="274" width="100" height="30"/>
+                                <state key="normal" title="Tap to Change">
+                                    <color key="titleColor" red="0.93218547110000005" green="0.77822750809999997" blue="0.26951387519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qTc-jO-4EE" firstAttribute="leading" secondItem="Os1-UZ-Kbp" secondAttribute="leading" constant="97" id="68p-Ve-FDB"/>
+                            <constraint firstAttribute="bottom" secondItem="iaA-nv-klU" secondAttribute="bottom" id="AfF-gK-pVN"/>
+                            <constraint firstItem="QzZ-gV-Pds" firstAttribute="centerX" secondItem="qTc-jO-4EE" secondAttribute="centerX" id="Aqb-ou-8z4"/>
+                            <constraint firstItem="6Nr-c7-n3J" firstAttribute="centerX" secondItem="sBa-QQ-llZ" secondAttribute="centerX" id="BAp-EP-AXZ"/>
+                            <constraint firstItem="qTc-jO-4EE" firstAttribute="centerX" secondItem="6Nr-c7-n3J" secondAttribute="centerX" id="HL4-7s-PK5"/>
+                            <constraint firstItem="QzZ-gV-Pds" firstAttribute="leading" secondItem="Os1-UZ-Kbp" secondAttribute="leading" constant="137" id="NYM-YJ-7ey"/>
+                            <constraint firstItem="Os1-UZ-Kbp" firstAttribute="bottom" secondItem="6Nr-c7-n3J" secondAttribute="bottom" constant="35" id="UUg-ge-Myx"/>
+                            <constraint firstItem="6Nr-c7-n3J" firstAttribute="leading" secondItem="Os1-UZ-Kbp" secondAttribute="leading" constant="71" id="d1q-17-49P"/>
+                            <constraint firstItem="iaA-nv-klU" firstAttribute="leading" secondItem="sBa-QQ-llZ" secondAttribute="leading" id="i9L-Zh-a2r"/>
+                            <constraint firstItem="iaA-nv-klU" firstAttribute="top" secondItem="sBa-QQ-llZ" secondAttribute="top" id="pvd-yQ-cPQ"/>
+                            <constraint firstItem="QzZ-gV-Pds" firstAttribute="top" secondItem="qTc-jO-4EE" secondAttribute="bottom" constant="24" id="slN-1q-tpv"/>
+                            <constraint firstItem="iaA-nv-klU" firstAttribute="centerX" secondItem="6Nr-c7-n3J" secondAttribute="centerX" id="suJ-ZS-jEn"/>
+                            <constraint firstItem="qTc-jO-4EE" firstAttribute="top" secondItem="Os1-UZ-Kbp" secondAttribute="top" constant="49" id="wXB-bl-hgS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Os1-UZ-Kbp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="account" landscapeImage="account" largeContentSizeImage="account" id="QL2-lY-tSf">
                         <color key="badgeColor" red="0.048232345429999997" green="0.50463487689999997" blue="0.14939126920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="logout" destination="6Nr-c7-n3J" id="HBg-pH-i2b"/>
+                        <outlet property="proff" destination="qTc-jO-4EE" id="YaD-9v-Eoi"/>
                         <segue destination="llo-j3-9rk" kind="show" identifier="ToHomeScreen" id="nIh-eg-t32"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFO-ft-S3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="271"/>
+            <point key="canvasLocation" x="413.60000000000002" y="270.31484257871068"/>
         </scene>
-        <!--Ib Calendar Data Source-->
+        <!--calendar-->
         <scene sceneID="LzI-v4-oh3">
             <objects>
                 <viewController title="calendar" id="U5p-ff-hja" customClass="ThirdViewController" customModule="Bear_Den" customModuleProvider="target" sceneMemberID="viewController">
@@ -510,77 +543,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="backgroundG" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-D3-0N3">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="backgroundG" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-D3-0N3">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8QH-aE-kpK" userLabel="CalendarView" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
-                                <rect key="frame" x="0.0" y="20" width="375" height="399"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cd0-92-VGS">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="cJ3-Kf-BAW" customClass="CustomCell" customModule="Bear_Den" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nt4-HD-0je">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="20"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOD-2F-cZf">
-                                                    <rect key="frame" x="4" y="15" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="fOD-2F-cZf" firstAttribute="centerX" secondItem="cJ3-Kf-BAW" secondAttribute="centerX" id="7k3-wd-VFB"/>
-                                            <constraint firstItem="nt4-HD-0je" firstAttribute="leading" secondItem="cJ3-Kf-BAW" secondAttribute="leading" id="BW8-6O-Idu"/>
-                                            <constraint firstItem="nt4-HD-0je" firstAttribute="top" secondItem="cJ3-Kf-BAW" secondAttribute="top" id="MUS-cw-rdS"/>
-                                            <constraint firstItem="nt4-HD-0je" firstAttribute="centerX" secondItem="fOD-2F-cZf" secondAttribute="centerX" id="au5-fQ-vcn"/>
-                                            <constraint firstItem="fOD-2F-cZf" firstAttribute="centerY" secondItem="cJ3-Kf-BAW" secondAttribute="centerY" id="lVU-4T-nle"/>
-                                            <constraint firstItem="fOD-2F-cZf" firstAttribute="top" secondItem="cJ3-Kf-BAW" secondAttribute="topMargin" constant="-5" id="lsx-GM-MQd"/>
-                                            <constraint firstItem="nt4-HD-0je" firstAttribute="centerY" secondItem="fOD-2F-cZf" secondAttribute="centerY" id="zaL-qu-j1G"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="dateLabel" destination="fOD-2F-cZf" id="FSH-mQ-4yq"/>
-                                            <outlet property="selectedView" destination="nt4-HD-0je" id="O56-XG-99G"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cellSize">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQs-aw-xbh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJS-tq-h4O">
+                                <rect key="frame" x="16" y="568" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="MnU-kS-oE9"/>
+                                    <constraint firstAttribute="width" secondItem="AJS-tq-h4O" secondAttribute="height" multiplier="1:1" id="UIO-2O-l5E"/>
+                                    <constraint firstAttribute="height" constant="35" id="uAu-9B-p7L"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="backButton-1"/>
                                 <connections>
-                                    <outlet property="ibCalendarDataSource" destination="U5p-ff-hja" id="Fhe-Db-7vA"/>
-                                    <outlet property="ibCalendarDelegate" destination="U5p-ff-hja" id="lVI-Se-EMF"/>
+                                    <action selector="goBackward:" destination="U5p-ff-hja" eventType="touchUpInside" id="Pj8-ju-4Sq"/>
                                 </connections>
-                            </collectionView>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-gd-xaU">
+                                <rect key="frame" x="324" y="568" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="A4p-bH-ui9"/>
+                                    <constraint firstAttribute="height" constant="35" id="MRz-a1-aQ0"/>
+                                    <constraint firstAttribute="width" secondItem="Ofj-gd-xaU" secondAttribute="height" multiplier="1:1" id="bNf-jC-puh"/>
+                                </constraints>
+                                <state key="normal" image="fowardButton"/>
+                                <connections>
+                                    <action selector="goFoward:" destination="U5p-ff-hja" eventType="touchUpInside" id="MAc-rM-nwV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8QH-aE-kpK" firstAttribute="leading" secondItem="F2H-D3-0N3" secondAttribute="leading" id="4Tu-UJ-8y8"/>
-                            <constraint firstItem="8QH-aE-kpK" firstAttribute="trailing" secondItem="F2H-D3-0N3" secondAttribute="trailing" id="4jw-3F-dKp"/>
-                            <constraint firstItem="8QH-aE-kpK" firstAttribute="leading" secondItem="Rz9-Ik-Klc" secondAttribute="leading" id="ELs-zD-tid"/>
-                            <constraint firstAttribute="trailing" secondItem="8QH-aE-kpK" secondAttribute="trailing" id="JcV-oc-Nbj"/>
-                            <constraint firstItem="8QH-aE-kpK" firstAttribute="top" secondItem="sPT-xA-Nyx" secondAttribute="top" id="fQo-Dr-ee3"/>
-                            <constraint firstItem="sPT-xA-Nyx" firstAttribute="bottom" secondItem="8QH-aE-kpK" secondAttribute="bottom" constant="267" id="nsV-sA-QX2"/>
+                            <constraint firstItem="AJS-tq-h4O" firstAttribute="leading" secondItem="sPT-xA-Nyx" secondAttribute="leading" constant="16" id="6Cc-wN-wWD"/>
+                            <constraint firstItem="WQs-aw-xbh" firstAttribute="top" secondItem="sPT-xA-Nyx" secondAttribute="top" id="88j-dr-877"/>
+                            <constraint firstItem="sPT-xA-Nyx" firstAttribute="trailing" secondItem="Ofj-gd-xaU" secondAttribute="trailing" constant="16" id="8hx-6g-xIK"/>
+                            <constraint firstItem="WQs-aw-xbh" firstAttribute="leading" secondItem="Rz9-Ik-Klc" secondAttribute="leadingMargin" constant="-16" id="9aD-sW-g8e"/>
+                            <constraint firstItem="WQs-aw-xbh" firstAttribute="centerX" secondItem="F2H-D3-0N3" secondAttribute="centerX" id="JqA-Mo-phL"/>
+                            <constraint firstItem="WQs-aw-xbh" firstAttribute="top" secondItem="F2H-D3-0N3" secondAttribute="top" id="KXS-D4-JlM"/>
+                            <constraint firstItem="WQs-aw-xbh" firstAttribute="trailing" secondItem="Rz9-Ik-Klc" secondAttribute="trailingMargin" constant="16" id="Qi1-JU-Odn"/>
+                            <constraint firstItem="sPT-xA-Nyx" firstAttribute="bottom" secondItem="AJS-tq-h4O" secondAttribute="bottom" constant="15" id="d8a-86-rij"/>
+                            <constraint firstItem="sPT-xA-Nyx" firstAttribute="bottom" secondItem="Ofj-gd-xaU" secondAttribute="bottom" constant="15" id="iYh-ZP-BhW"/>
+                            <constraint firstItem="sPT-xA-Nyx" firstAttribute="bottom" secondItem="WQs-aw-xbh" secondAttribute="bottom" id="xCD-rW-LS2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sPT-xA-Nyx"/>
                     </view>
@@ -588,12 +598,12 @@
                         <color key="badgeColor" red="0.048232345429999997" green="0.50463487689999997" blue="0.14939126920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="calendarView" destination="8QH-aE-kpK" id="e9V-ca-cD3"/>
+                        <outlet property="WebView" destination="WQs-aw-xbh" id="Gdr-ZJ-K6B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4U-gK-qoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="-520"/>
+            <point key="canvasLocation" x="413.60000000000002" y="-520.38980509745136"/>
         </scene>
         <!--New Post View Controller-->
         <scene sceneID="p0w-ZP-Q36">
@@ -678,15 +688,17 @@
     <resources>
         <image name="account" width="25" height="25"/>
         <image name="backButton" width="512" height="512"/>
+        <image name="backButton-1" width="300" height="300"/>
         <image name="backgroundG" width="750" height="1334"/>
         <image name="bearFont" width="311" height="55"/>
         <image name="bers" width="1090" height="1090"/>
         <image name="calendar" width="25" height="25"/>
+        <image name="fowardButton" width="300" height="300"/>
         <image name="profImage" width="225" height="225"/>
         <image name="timeline" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uJo-QW-OdY"/>
-        <segue reference="Qjt-xk-1bJ"/>
+        <segue reference="nIh-eg-t32"/>
     </inferredMetricsTieBreakers>
 </document>

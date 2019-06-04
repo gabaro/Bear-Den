@@ -95,5 +95,11 @@ class loginScreen: UIViewController, UITextFieldDelegate {
         activityView.stopAnimating()
         
     }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        //or
+        //self.view.endEditing(true)
+        return true
+    }
 }

@@ -11,10 +11,21 @@ import Foundation
 import Firebase
 
 class FourthViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var proff: UIImageView!
+    @IBOutlet weak var logout: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        logout.layer.cornerRadius = (logout.frame.height / 2) + 1
+        proff.layer.cornerRadius = (proff.frame.height / 2)
+        
+        
     }
+    
+    
     
     @IBAction func handleLogout(_ target: UIButton){
         try! Auth.auth().signOut()

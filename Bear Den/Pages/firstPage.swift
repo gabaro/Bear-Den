@@ -35,6 +35,7 @@ class firstPage: UIViewController
         
     }
     
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         get {
             return .lightContent

@@ -225,6 +225,13 @@ class signUpScreen: UIViewController, UITextFieldDelegate {
                                         y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
         activityView.center = continueButton.center
     }
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        //or
+        //self.view.endEditing(true)
+        return true
+    }
 }
 
 extension signUpScreen: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
